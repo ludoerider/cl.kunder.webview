@@ -12,6 +12,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import android.webkit.WebView;
+
 import org.apache.cordova.CordovaActivity;
 
 public class WebViewActivity extends CordovaActivity {
