@@ -34,6 +34,11 @@ public class WebViewActivity extends CordovaActivity {
         if(shouldShowLoading){
             showLoading();
         }
+        
+        WebView browser = (WebView) findViewById(R.id.webview);
+        browser.getSettings().setLoadWithOverviewMode(true);
+        browser.getSettings().setUseWideViewPort(true);
+        
         loadUrl((url.matches("^(.*://|javascript:)[\\s\\S]*$")?"":"file:///android_asset/www/")+url);
     }
 
