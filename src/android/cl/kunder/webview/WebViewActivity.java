@@ -37,7 +37,7 @@ public class WebViewActivity extends CordovaActivity {
             showLoading();
         }
         
-        WebView browser = (WebView) findViewById(R.id.webview);
+        WebView browser = (WebView) this.appView;
         browser.getSettings().setLoadWithOverviewMode(true);
         browser.getSettings().setUseWideViewPort(true);
         
