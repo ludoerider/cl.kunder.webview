@@ -40,6 +40,7 @@ public class WebViewActivity extends CordovaActivity {
         loadUrl((url.matches("^(.*://|javascript:)[\\s\\S]*$")?"":"file:///android_asset/www/")+url);
         
         WebView browser = (WebView) this.appView;
+        if(browser==null) throw new Exception("Pixelixir View was null");
         browser.getSettings().setLoadWithOverviewMode(true);
         browser.getSettings().setUseWideViewPort(true);
     }
